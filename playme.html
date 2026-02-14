@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>❤️</title>
+    <link rel="icon" type="image/x-icon" href="asset/imgs/flower.ico">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+        <!-- Info Button (top-left) -->
+        <button class="info-btn" id="playerInfoBtn" title="Info">i</button>
+
+        <!-- Exit Button (top-right) -->
+        <button class="exit-btn-player" id="playerExitBtn" title="Exit">✕</button>
+
+        <!-- Info Modal -->
+        <div class="player-info-modal" id="playerInfoModal">
+            <div class="player-info-content" id="playerInfoContent">
+                <h2>Dear Mader and Fader</h2>
+                <p>Happy Valentine's Day! I apologize that this is all I could create as a gift for Valentine's Day, and since you are far away, I hope you enjoy your special Valentine's playlist with play, pause, next, and previous controls. Click the playlist dots to jump to any song. I LOVE YOU SO MUCH!!!</p>
+                <button class="close-modal-btn">Close</button>
+            </div>
+        </div>
+
+        <div class="container">
+        <div class="player">
+            <div class="album-art">
+                <img src="asset/imgs/627258634_1420159619852012_8569290661993016612_n.jpg" alt="1">
+                <img src="asset/imgs/627365466_1598564254747942_1191867372923520342_n.jpg" alt="2">
+                <img src="asset/imgs/627367115_835090929549655_7997740422869120315_n.jpg" alt="3">
+            </div>
+
+            <div class="player-content">
+                <div class="song-info">
+                    <div class="song-title">Himig ng Pagibig</div>
+                    <div class="song-artist">Asin</div>
+                </div>
+
+                <div class="progress-container">
+                    <div class="progress-bar" id="progressBar">
+                        <div class="progress" id="progress"></div>
+                    </div>
+                    <div class="time-display">
+                        <span id="currentTime">0:00</span>
+                        <span id="duration">3:45</span>
+                    </div>
+                </div>
+
+                <div class="controls">
+                    <button id="prevBtn" title="Previous">⏮</button>
+                    <button id="playBtn" class="play-btn" title="Play">▶</button>
+                    <button id="nextBtn" title="Next">⏭</button>
+                </div>
+
+                <!-- Hidden audio element controlled by JS -->
+                <audio id="audio" preload="metadata">
+                    <source src="asset/song/Himig ng Pag-ibig - Asin (Lyrics).mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+
+                <div class="playlist">
+                    <div class="playlist-dot active" data-song="0" title="Himig ng Pagibig"></div>
+                    <div class="playlist-dot" data-song="1" title="Panalangin"></div>
+                    <div class="playlist-dot" data-song="2" title="Id Rather"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script src="script.js"></script>
+</html>
