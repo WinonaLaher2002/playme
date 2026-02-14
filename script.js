@@ -13,7 +13,7 @@
                     clickSound.play().catch(err => console.log('Sound play error:', err));
                 }
                 setTimeout(() => {
-                    window.location.href = 'index.html';
+                    window.location.href = 'playme.html';
                 }, 300);
             }
 
@@ -223,4 +223,5 @@
                     toggleInfoModal();
                 }
             });
+
         }
