@@ -203,7 +203,7 @@
 
             function exitToStartPage() {
                 if (confirm('Go back to start page?')) {
-                    window.location.href = 'startpage.html';
+                    window.location.href = 'index.html';
                 }
             }
 
@@ -225,3 +225,4 @@
             });
 
         }
+
